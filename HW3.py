@@ -1,3 +1,6 @@
+#Name: Eli Hopkins
+#Class: 5th hour
+#Assignment: HW3
 print("hello world")
 
 list = ["john pear", "john apple", "john bannana", "john strayberry", "john grape"]

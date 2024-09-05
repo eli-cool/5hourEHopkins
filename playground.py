@@ -1,6 +1,6 @@
 #Eli Hopkins
 #Class: 5th hour
-#Assignment: HW3
+#Assignment: playground
 
 list1 =  [1, 4, 2, 8, 5, 10]
 lissum = 0

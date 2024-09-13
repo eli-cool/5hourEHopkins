@@ -12,7 +12,7 @@ dic = {
     "abc": [1,2,3]
 }
 #print value of one of the three numbers by itself
-print(dic["abc"[1]])
+print(dic["abc"][1])
 #update function to add a fourth key to the dictionary with a value
 dic.update({"updated key":"updated value"})
 #print entire dictionary
@@ -21,23 +21,28 @@ print(dic)
 dic.clear()
 print(dic)
 #make a nested dictionary with three entries containing the name
+#of another classmate and two other pieces of information within each entry
+
 classroom = {
-"Eli": {
+"student1": {
+    "Name": "Eli",
     "Age": "16",
     "fav color": "Green",
     "fav Game": "Terraria",
 },
-"Ethan": {
+"student2": {
+    "Name": "Ethan",
     "Age": "17",
     "fav color": "Blue",
     "fav Game": "Eldenring",
 },
-"Ryley": {
+"student3": {
+    "Name": "Ryley",
     "Age": "17",
     "fav color": "Green",
     "fav Game": "Skyrim",
 }
 }
-#of another classmate and two other pieces of information within each entry
 
 #print the names of all three classmates on the same line
+print(classroom["student1"]["Name"],classroom["student2"]["Name"],classroom["student3"]["Name"])

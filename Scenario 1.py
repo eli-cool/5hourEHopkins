@@ -47,7 +47,17 @@ enmy = {
     "gimmic": "intelligent"}
 }
 
-print(enmy)
-change = (input("input animal number: "))
-dmgchange = (input("input damage change: "))
+for i in enmy.items():
+    print(i)
+enemynumb = 0
+
+def changefunc(old):
+    enmy["Enemy"+{old}]["Dmg"] = input(f"enter new dmg for enemy{old}")
+    print(enmy["Enemy"+{old}]["Dmg"])
+
+intro = int(input("type 1 if you would like to change an enemy's damage "))
+if intro == 1:
+    changefunc(int(input("enter enemy's number ")))
+else:
+    print("ok have a nice day")
 

@@ -14,36 +14,36 @@ enmy = {
 "Enemy1": {
     "Name": "bee",
     "size": "tiny",
-    "dmg": "10",
-    "Hp": "1",
+    "dmg": 10,
+    "Hp": 1,
     "gimmic": "sting"
 },
 "Enemy2": {
     "Name": "wolf",
     "Size": "medium",
-    "Dmg": "50",
-    "Hp": "40",
+    "Dmg": 50,
+    "Hp": 40,
     "gimmic": "howl"
 },
 "Enemy3": {
     "Name": "bear",
     "Size": "big",
-    "Dmg": "50",
-    "Hp": "60",
+    "Dmg": 50,
+    "Hp": 60,
     "gimmic": "tree climb"
 },
 "Enemy4": {
     "Name": "honey badger",
     "Size": "small",
-    "Dmg": "30",
-    "Hp": "80",
+    "Dmg": 30,
+    "Hp": 80,
     "gimmic": "bullet resistant"
 },
 "Enemy5": {
     "Name": "elephant",
     "Size": "huge",
-    "Dmg": "100",
-    "Hp": "100",
+    "Dmg": 100,
+    "Hp": 100,
     "gimmic": "intelligent"}
 }
 
@@ -52,8 +52,11 @@ for i in enmy.items():
 enemynumb = 0
 
 def changefunc(old):
-    enmy["Enemy"+{old}]["Dmg"] = input(f"enter new dmg for enemy{old}")
-    print(enmy["Enemy"+{old}]["Dmg"])
+    enemy_key = f"Enemy{old}"
+    # Get the new damage:
+    enmy[enemy_key]["Dmg"] = input(f"enter new dmg for the {enmy[enemy_key]['Name']}: ")
+    # Print the new damage:
+    print(f"The new damage for {enmy[enemy_key]['Name']} is: {enmy[enemy_key]['Dmg']}")
 
 intro = int(input("type 1 if you would like to change an enemy's damage "))
 if intro == 1:

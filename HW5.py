@@ -1,3 +1,6 @@
+#Name: Eli Hopkins
+#Class: 5th Hour
+#Assignment: HW5
 #1. Print "Hello World!"
 print("hello world yaaay")
 #2. Create a list that contains 3 integers

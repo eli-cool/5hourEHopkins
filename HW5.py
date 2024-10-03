@@ -14,3 +14,5 @@ elif lisp[2] > lisp[0] and lisp[2] > lisp[1]:
   print("lisp[2] (102) is the highest")
 else:
   print("they are all equal")
+
+print(max(lisp))

@@ -13,31 +13,36 @@
 from random import randint
 
 enmy = {
-"skeleton": {
+"e1": {
+    "Name": "skeleton",
     "mod": 4,
     "Hp": 13,
-    "dmgroll": randint(1, 6),
+    "AC": 14,
 },
-"mummy": {
+"e2": {
+    "Name":"mummy",
     "mod": 3,
-    "Hp": 30,
-    "dmgroll": randint(1, 3),
+    "Hp": 7,
+    "AC": 17,
 },
-"big tongue": {
+"e3": {
+    "Name":"big tongue",
     "mod": 3,
     "Hp": 15,
-    "dmgroll": randint(1, 5),
+    "AC": 16,
 },
-"walking cactus": {
+"e4": {
+    "Name":"walking cactus",
     "mod": 7,
     "Hp": 6,
-    "dmgroll": randint(1, 3),
-    "AC": 17,
+    "AC": 12,
 
 },
-"sphinx": {
-    "mod": 100,
-    "Hp": 100,
+"e5": {
+    "Name": "sphinx",
+    "mod": 5,
+    "Hp": 17,
+    "AC": 10,
 }
 }
 #Each enemy and party member in both dictionaries needs:
@@ -46,8 +51,8 @@ enmy = {
 # - a damage roll (a number that varies based on weapon/spell)
 # - and an Armor Class (somewhere between 10 and 17).
 partyDictionary = {
-    "LaeZel" : {
-        "Race" : "Githyanki",
+    "1" : {
+        "Name" : "LaeZel",
         "Class" : "Fighter",
         "Background" : "Soldier",
         "mod": 7,
@@ -55,34 +60,39 @@ partyDictionary = {
         "AC" : 17,
 
     },
-    "Shadowheart" : {
-        "Race" : "Half-Elf",
+    "2" : {
+        "Name" : "Shadowheart",
         "Class" : "Cleric",
         "Background" : "Acolyte",
         "mod": 2,
         "Health" : 10,
         "AC" : 14,
     },
-    "Gale" : {
-        "Race" : "Human",
+    "3" : {
+        "Name" : "Gale",
         "Class" : "Wizard",
         "Background" : "Sage",
+        "mod" : 3,
         "Health" : 8,
         "AC" : 14,
-        "Damage" : 3,
     },
-    "Astarion" : {
-        "Race" : "High Elf",
+    "4" : {
+        "Name" : "Astarion",
         "Class" : "Rogue",
         "Background" : "Charlatan",
+        "mod": 3,
         "Health" : 10,
         "AC" : 14,
-        "Damage" : 3,
     }
 }
 #Once both dictionaries are updated, create a combat
 #prototype that has a party member attack first, then an enemy
 #attacks back right after.
+
+def attk(silly, serios):
+
+    evil = f"e{silly}"
+    good = {serios}
 
 #To determine if a creature hits another creature, you roll a
 #20-sided die (d20) and add the attack modifier to the roll.
@@ -90,6 +100,21 @@ partyDictionary = {
 #(AC), the attack hits and you roll for damage. If it is lower, the
 #attack misses. If an enemy or party member hits zero (0) health
 #points, they die.
+
+    print("1 for LaeZel")
+    print("2 for Shadowheart")
+    print("3 for Gale")
+    print("4 for Astarion")
+
+    ans = int(input("what character will you use? "))
+
+    print("1 for skeleton")
+    print("2 for mummy")
+    print("3 for big tounge")
+    print("4 for walking cactus")
+    print("5 for sphinx")
+
+    ans2 = int(input("which monster will you fight? "))
 
 #To make things easier, here is a reference list for party damage rolls.
 #(Feel free to use similar numbers for your enemy dictionary.)

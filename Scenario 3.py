@@ -92,7 +92,17 @@ partyDictionary = {
 def attk(silly, serios):
 
     evil = f"e{silly}"
-    good = {serios}
+    good = serios
+
+    print(good["Name"], "is attacking a", evil["Name"])
+
+    roll = randint(1,20)
+    print (good["Name"], "did", roll, "to", evil["Name"])
+
+    evil["Hp"] -= roll
+
+    if evil["Hp"] <= 0:
+        print(evil["Name"])
 
 #To determine if a creature hits another creature, you roll a
 #20-sided die (d20) and add the attack modifier to the roll.
@@ -101,20 +111,22 @@ def attk(silly, serios):
 #attack misses. If an enemy or party member hits zero (0) health
 #points, they die.
 
-    print("1 for LaeZel")
-    print("2 for Shadowheart")
-    print("3 for Gale")
-    print("4 for Astarion")
+print("1 for LaeZel")
+print("2 for Shadowheart")
+print("3 for Gale")
+print("4 for Astarion")
 
-    ans = int(input("what character will you use? "))
+ans = int(input("what character will you use? "))
 
-    print("1 for skeleton")
-    print("2 for mummy")
-    print("3 for big tounge")
-    print("4 for walking cactus")
-    print("5 for sphinx")
+print("1 for skeleton")
+print("2 for mummy")
+print("3 for big tounge")
+print("4 for walking cactus")
+print("5 for sphinx")
 
-    ans2 = int(input("which monster will you fight? "))
+ans2 = int(input("which monster will you fight? "))
+
+attk(ans,ans2)
 
 #To make things easier, here is a reference list for party damage rolls.
 #(Feel free to use similar numbers for your enemy dictionary.)

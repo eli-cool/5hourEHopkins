@@ -1,6 +1,7 @@
 #Eli Hopkins
 #Class: 5th hour
 #Assignment: playground
+
 from random import randint
 
 ran = randint (1,48)

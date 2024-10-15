@@ -94,32 +94,32 @@ partyDictionary = {
 def attk(silly, good):
     evil = f"e{silly}"
 
-    print(partyDictionary[str(good)]["Name"], " is attacking a ", enmy[evil]["Name"])
+    print(partyDictionary[str(good)]["Name"], "is attacking a", enmy[evil]["Name"])
     # Hit Roll
 
     roll = randint(1, 20) + partyDictionary[str(good)]["mod"]
 
-    print(partyDictionary[str(good)]["Name"], " did ", roll, " to ", enmy[evil]["Name"])
+    print(partyDictionary[str(good)]["Name"], "did", roll, "to", enmy[evil]["Name"])
     # Check for a Hit
 
 
     if roll >= enmy[evil]["AC"]:
         print("HIT!")
-    # Damage Roll (Example: LaeZel's greatsword)
-        damage = randint(1, 6) + randint(1, 6) + 3
+    # Damage Roll
+        damage = randint(1, 6) + randint(1, 6) + partyDictionary[str(good)]["mod"]
         enmy[evil]["Hp"] -= damage
         print(f"{partyDictionary[str(good)]['Name']} dealt {damage} damage!")
     else:
         print("MISS!")
 # Check for Enemy Death
     if enmy[evil]["Hp"] <= 0:
-        print(enmy[evil]["Name"], " has died!")
+        print(enmy[evil]["Name"], "has died!")
 
 # Enemy Attack Back
     if enmy[evil]["Hp"] > 0:
 
         enemy_roll = randint(1, 20) + enmy[evil]["mod"]
-        print(enmy[evil]["Name"], " attacks back!")
+        print(enmy[evil]["Name"], "attacks back!")
 
         if enemy_roll >= partyDictionary[str(good)]["AC"]:
 
@@ -129,6 +129,9 @@ def attk(silly, good):
             print(f"{enmy[evil]['Name']} deals {enemy_damage} damage!")
         else:
             print(f"{enmy[evil]['Name']} misses!")
+    #hero dies check
+    if partyDictionary[str(good)]["Health"] < 0:
+        print(partyDictionary[str(good)]["Name"],"has died!!")
 
 #To determine if a creature hits another creature, you roll a
 #20-sided die (d20) and add the attack modifier to the roll.

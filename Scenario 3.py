@@ -98,8 +98,6 @@ def attk(silly, good):
     # Hit Roll
 
     roll = randint(1, 20) + partyDictionary[str(good)]["mod"]
-
-    print(partyDictionary[str(good)]["Name"], "did", roll, "to", enmy[evil]["Name"])
     # Check for a Hit
 
 

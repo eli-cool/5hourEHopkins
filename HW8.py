@@ -47,6 +47,6 @@ listvars = [intVar1, strVar3, boolVar4, strVar5, strVar6, intVar7, strVar8, list
 intsum = 0
 #3. Take all the variables you labeled as "integer", add them together, and print the result.
 for i in listvars:
-    if type(i) == int:  # You can use `type(i) == int` or `isinstance(i, int)` here. Both are valid.
+    if type(i) == int:
         intsum += i
 print(intsum)

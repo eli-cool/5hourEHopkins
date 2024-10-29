@@ -20,4 +20,5 @@ else:
         print("its mild")
     else:
         print ("its cold")
+
 print("thank you")

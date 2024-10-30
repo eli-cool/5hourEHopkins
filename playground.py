@@ -3,6 +3,7 @@
 #Assignment: playground
 
 from random import randint
+from time import sleep
 #separates 100 into 2 halfs
 half = randint (1,48)
 half2 = 49 - half
@@ -10,23 +11,48 @@ half2 = 49 - half
 points = 0
 #lives duh
 lives = 3
+#ask for custom hellos and worlds
+hellos = input("what do you want the citizens to be named? say 0 for default ")
+if hellos == "0":
+    hellos = "hello"
+print (hellos)
+sleep(0.4)
+print('.')
+sleep(0.6)
+print('.')
+sleep(0.8)
+print('.')
+sleep(1)
+print("ok")
+worlds = input("what do you want the hider to be named? say 0 for default ")
+if worlds == "0":
+    worlds = "world"
+print (worlds)
+sleep(0.4)
+print('.')
+sleep(0.6)
+print('.')
+sleep(0.8)
+print('.')
+sleep(1)
+print("ok")
 #a number that keeps track where the World is in the Hellos
 total = 0
 while True:
 #for var half times it prints hello and keeps track what number it currently is on
     for i in range(half):
         total += 1
-        print("hello", total)
+        print(hellos, total)
 #prints world and tottrue takes the number it is on
     total = total + 1
-    print ("world", total)
+    print (worlds, total)
     tottrue = total
 #finishes the hello chain until its 100
     for x in range(half2):
         total = total + 1
-        print("hello", total)
+        print(hellos, total)
 #ask question and checks whether it is tottrue which is the same number world is on
-    ans = int(input("what number is \"world\" at? :"))
+    ans = int(input(f"what number is \"{worlds}\" at? :"))
     if ans == tottrue:
         print("you got it!")
         points = points + 1

@@ -11,31 +11,26 @@ half2 = 49 - half
 points = 0
 #lives duh
 lives = 3
-#ask for custom hellos and worlds
-hellos = input("what do you want the citizens to be named? say 0 for default ")
-if hellos == "0":
-    hellos = "hello"
-print (hellos)
+
+while True:
+
+    askchar = input("would you like to have custom characters? (y/n) ")
+    if askchar == "y" or "yes":
+        #ask for custom hellos and worlds
+        hellos = input("what do you want the citizens to be named?")
+
+    worlds = input("what do you want the hider to be named? say 0 for default ")
+    if worlds == "0":
+        worlds = "world"
+
+char = []
+
+print("3")
 sleep(0.4)
-print('.')
-sleep(0.6)
-print('.')
-sleep(0.8)
-print('.')
-sleep(1)
-print("ok")
-worlds = input("what do you want the hider to be named? say 0 for default ")
-if worlds == "0":
-    worlds = "world"
-print (worlds)
+print("2")
 sleep(0.4)
-print('.')
-sleep(0.6)
-print('.')
-sleep(0.8)
-print('.')
-sleep(1)
-print("ok")
+print("1")
+sleep(0.4)
 #a number that keeps track where the World is in the Hellos
 total = 0
 while True:

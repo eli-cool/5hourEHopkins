@@ -7,20 +7,17 @@
 #is divisible by 3 you say "Fizz" instead of the number,
 #every number divisible by 5 you say "Buzz" instead,
 #and if it's divisible by both you say "FizzBuzz".
-i = 100
-while i > 0:
-
+i = 1
+while i < 100:
     if i % 3 == 0 and i % 5 == 0:
         print("fizzbuzz")
+    elif i % 3 == 0:
+        print("fizz")
+    elif i % 5 == 0:
+        print("buzz")
     else:
-        if i % 3 == 0:
-            print("fizz")
-        else:
-            if i % 5 == 0:
-                print("buzz")
-            else:
-                print(i)
-    i -= 1
+       print(i)
+    i += 1
 
 
 #Create a while loop that follows the rules of the game.

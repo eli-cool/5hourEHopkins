@@ -1,3 +1,4 @@
+"""
 #Eli Hopkins
 #Class: 5th hour
 #Assignment: playground
@@ -73,3 +74,53 @@ while True:
         print("you have", lives," lives. YOu lOOsE!")
         print("your score is", points)
         break
+"""
+import pygame
+import sys
+
+
+class MovingSquareGame:
+    def __init__(self):
+        pygame.init()
+        self.width, self.height = 500, 500
+        self.win = pygame.display.set_mode((self.width, self.height))
+        pygame.display.set_caption("Moving Square")
+        self.square_size = 50
+        self.square_x = self.width // 2 - self.square_size // 2
+        self.square_y = self.height // 2 - self.square_size // 2
+        self.speed = 5
+        self.clock = pygame.time.Clock()
+
+    def run(self):
+        while True:
+            self._handle_events()
+            self._move_square()
+            self._draw_screen()
+            self.clock.tick(60)
+
+    def _handle_events(self):
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                sys.exit()
+
+    def _move_square(self):
+        keys = pygame.key.get_pressed()
+        if keys[pygame.K_w] and self.square_y > 0:
+            self.square_y -= self.speed
+        if keys[pygame.K_s] and self.square_y < self.height - self.square_size:
+            self.square_y += self.speed
+        if keys[pygame.K_a] and self.square_x > 0:
+            self.square_x -= self.speed
+        if keys[pygame.K_d] and self.square_x < self.width - self.square_size:
+            self.square_x += self.speed
+
+    def _draw_screen(self):
+        self.win.fill((255, 255, 255))
+        pygame.draw.rect(self.win, (0, 0, 0), (self.square_x, self.square_y, self.square_size, self.square_size))
+        pygame.display.update()
+
+
+if __name__ == '__main__':
+    game = MovingSquareGame()
+    game.run()

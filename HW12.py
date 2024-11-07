@@ -15,12 +15,10 @@ for i in range(1, 31):
     if i % 2 == 0:
         print(i)
 #3. Create a for loop that prints 5 different animals from a list.
-anim = ["cow", "bear", "eagle", "shrimp"]
+anim = ["cow", "bear", "eagle", "shrimp", "mantis"]
 for i in anim:
     print(i)
 #4. Create a for loop that spells out a word you input backwards.
 #(HINT: Google "How to reverse a string in Python")
-ques = input("give me a word ")
-ques2 = ques[::-1]
-for i in ques2:
+for i in input("give me a word ")[::-1]:
     print(i)

@@ -75,7 +75,8 @@ while True:
         print("your score is", points)
         break
 """
-""" import pygame
+"""
+import pygame
 import sys
 
 
@@ -124,14 +125,17 @@ class MovingSquareGame:
 
 if __name__ == '__main__':
     game = MovingSquareGame()
-    game.run() """
+    game.run()
+"""
 import pygame
 import sys
+
 def _handle_events():
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
+
 class MovingSquareGame:
     def __init__(self):
         pygame.init()
@@ -139,58 +143,59 @@ class MovingSquareGame:
         self.win = pygame.display.set_mode((self.width, self.height))
         pygame.display.set_caption("Moving Square")
         self.square_size = 50
-        self.player_x = self.width // 2 - self.square_size // 2
-        self.player_y = self.height // 2 - self.square_size // 2
-        self.wall_x = self.width - self.square_size * 2
-        self.wall_y = self.height // 2 - self.square_size // 2
+        self.square_x = self.width // 2 - self.square_size // 2
+        self.square_y = self.height // 2 - self.square_size // 2
         self.speed = 5
+        self.dash_speed = 5  # Dash speed multiplier
+        self.dash_duration = 10  # Frames for the dash
+        self.dash_timer = 0  # Timer for the dash
+        self.dashing = False  # Flag for dash state
+        self.dash_cooldown = 30  # Frames for the cooldown
+        self.dash_cooldown_timer = 0  # Timer for the cooldown
         self.clock = pygame.time.Clock()
-        self.player_color = (0, 0, 0)  # Default color: black
+
     def run(self):
         while True:
             _handle_events()
-            self._move_player()
-            self._check_collision()
+            self._move_square()
             self._draw_screen()
             self.clock.tick(60)
-    def _move_player(self):
+
+    def _move_square(self):
         keys = pygame.key.get_pressed()
-        if keys[pygame.K_w] and self.player_y > 0:
-            self.player_y -= self.speed
-            self.player_color = (255, 255, 0)  # Yellow for up
-        elif keys[pygame.K_s] and self.player_y < self.height - self.square_size:
-            self.player_y += self.speed
-            self.player_color = (0, 255, 0)  # Green for down
-        elif keys[pygame.K_a] and self.player_x > 0:
-            self.player_x -= self.speed
-            self.player_color = (0, 0, 255)  # Blue for left
-        elif keys[pygame.K_d] and self.player_x < self.width - self.square_size:
-            self.player_x += self.speed
-            self.player_color = (255, 0, 0)  # Red for right
+        if keys[pygame.K_e] and not self.dashing and self.dash_cooldown_timer == 0:  # Initiate dash on 'e' key press
+            self.dashing = True
+            self.dash_timer = self.dash_duration
+            self.dash_cooldown_timer = self.dash_cooldown
+
+        if self.dashing:
+            self.dash_timer -= 1
+            if self.dash_timer <= 0:
+                self.dashing = False  # End dash when timer reaches 0
+
+        if self.dash_cooldown_timer > 0:  # Apply cooldown
+            self.dash_cooldown_timer -= 1
+
+        if self.dashing:
+            speed = self.speed * self.dash_speed  # Use dash speed multiplier
         else:
-            self.player_color = (0, 0, 0)  # Black for standing still
-    def _check_collision(self):
-        player_rect = pygame.Rect(self.player_x, self.player_y, self.square_size, self.square_size)
-        wall_rect = pygame.Rect(self.wall_x, self.wall_y, self.square_size, self.square_size)
-        if player_rect.colliderect(wall_rect):
-            # If collision, reverse the player's movement based on the direction
-            if self.player_color == (255, 255, 0):  # Yellow (up)
-                self.player_y += self.speed
-            elif self.player_color == (0, 255, 0):  # Green (down)
-                self.player_y -= self.speed
-            elif self.player_color == (0, 0, 255):  # Blue (left)
-                self.player_x += self.speed
-            elif self.player_color == (255, 0, 0):  # Red (right)
-                self.player_x -= self.speed
+            speed = self.speed
+
+        if keys[pygame.K_w] and self.square_y > 0:
+            self.square_y -= speed
+        if keys[pygame.K_s] and self.square_y < self.height - self.square_size:
+            self.square_y += speed
+        if keys[pygame.K_a] and self.square_x > 0:
+            self.square_x -= speed
+        if keys[pygame.K_d] and self.square_x < self.width - self.square_size:
+            self.square_x += speed
+
     def _draw_screen(self):
         self.win.fill((255, 255, 255))
-        pygame.draw.rect(
-            self.win, self.player_color, (self.player_x, self.player_y, self.square_size, self.square_size)
-        )
-        pygame.draw.rect(
-            self.win, (0, 0, 0), (self.wall_x, self.wall_y, self.square_size, self.square_size)
-        )
+        pygame.draw.rect(self.win, (0, 0, 0), (self.square_x, self.square_y, self.square_size, self.square_size))
         pygame.display.update()
+
+
 if __name__ == '__main__':
     game = MovingSquareGame()
     game.run()

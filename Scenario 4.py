@@ -11,8 +11,12 @@ from random import randint
 #This prototype needs to allow the user to input the number of players, let each player rate
 #a single model from 1 to 5, and then give the average score of all of the ratings.
 from time import sleep
-ask = int(input("how many players?"))
-lisp = {}
+
+while True:
+    ask = int(input("how many players?"))
+    if ask > 0:
+        break
+colgate = {}
 
 for i in range(1,ask +1):
 
@@ -26,11 +30,23 @@ for i in range(1,ask +1):
     elif ran == 4:
         ran = "green"
     print("the model is ",ran)
-    rate = int(input("rate the model from 1 to 5 "))
-    lisp.update(rate)
-    lisp.rate.update(ran)
-avg = sum(lisp) / len(lisp)
-print("the average ratings for all models rated is ",avg)
-high = max(lisp)
-print("the highest ranked model is ",high)
+
+    while True:
+        rate = int(input("rate the model from 1 to 5 "))
+        if ask > 0:
+            break
+
+    colgate.update({ran:rate})
+
+hiest = max(colgate.values())
+
+toothmaxing = next(iter(colgate))
+max_key = 0
+for i in colgate:
+    if colgate[i] > colgate[toothmaxing]:
+        max_key = i
+
+print("the average ratings for all models rated is ",sum(colgate.values()) / len(colgate.values()))
+print("the highest ranked model is ",hiest,"and their color was ",max_key)
+
 

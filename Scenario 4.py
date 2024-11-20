@@ -29,24 +29,22 @@ for i in range(1,ask +1):
         ran = "yellow"
     elif ran == 4:
         ran = "green"
-    print("the model is ",ran)
+    print("new model! their outfit is",ran)
 
     while True:
         rate = int(input("rate the model from 1 to 5 "))
-        if ask > 0:
+        if rate < 1 or rate > 5:
+            print("nuh uh retry")
+        else:
             break
 
     colgate.update({ran:rate})
-
-hiest = max(colgate.values())
-
-toothmaxing = next(iter(colgate))
-max_key = 0
-for i in colgate:
-    if colgate[i] > colgate[toothmaxing]:
-        max_key = i
+temp = max(colgate.values())
+hi = [key for key in colgate if colgate[key] == temp]
+for i in hi:
+    hi = i
 
 print("the average ratings for all models rated is ",sum(colgate.values()) / len(colgate.values()))
-print("the highest ranked model is ",hiest,"and their color was ",max_key)
+print("the highest ranked model is",temp,"and their color was",hi)
 
 

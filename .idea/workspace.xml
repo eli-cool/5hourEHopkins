@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f63d945-dd29-44d2-b3ea-1d61039e76f2" name="Changes" comment="added HW14">
+    <list default="true" id="3f63d945-dd29-44d2-b3ea-1d61039e76f2" name="Changes" comment="added Scenario 4.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scenario 4.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scenario 4.py" afterDir="false" />
     </list>
@@ -88,14 +88,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1723830597690</updated>
-    </task>
-    <task id="LOCAL-00001" summary="initial commit">
-      <option name="closed" value="true" />
-      <created>1723832324011</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1723832324011</updated>
     </task>
     <task id="LOCAL-00002" summary="added HW1">
       <option name="closed" value="true" />
@@ -481,7 +473,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731957498252</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="added Scenario 4.py">
+      <option name="closed" value="true" />
+      <created>1732043995669</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1732043995669</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -500,6 +500,7 @@
     <MESSAGE value="added HW11" />
     <MESSAGE value="added HW12" />
     <MESSAGE value="added HW14" />
-    <option name="LAST_COMMIT_MESSAGE" value="added HW14" />
+    <MESSAGE value="added Scenario 4.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Scenario 4.py" />
   </component>
 </project>

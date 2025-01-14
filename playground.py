@@ -127,7 +127,7 @@ if __name__ == '__main__':
     game = MovingSquareGame()
     game.run()
 """
-import pygame
+"""import pygame
 import sys
 
 def _handle_events():
@@ -198,4 +198,23 @@ class MovingSquareGame:
 
 if __name__ == '__main__':
     game = MovingSquareGame()
-    game.run()
+    game.run()"""
+while True:
+    ask = int(input("how many players?"))
+    if ask > 0:
+        break
+colgate = []
+
+for i in range(1,ask +1):
+
+
+    while True:
+        rate = int(input("rate the model from 1 to 5 "))
+        if rate < 1 or rate > 5:
+            print("nuh uh retry")
+        else:
+            break
+
+    colgate.append(rate)
+
+print("the average ratings for all models rated is ",sum(colgate) / len(colgate))

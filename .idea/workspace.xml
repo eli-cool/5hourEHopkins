@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f63d945-dd29-44d2-b3ea-1d61039e76f2" name="Changes" comment="added HW15.py" />
+    <list default="true" id="3f63d945-dd29-44d2-b3ea-1d61039e76f2" name="Changes" comment="added HW15.py">
+      <change afterPath="$PROJECT_DIR$/HW16.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,6 +56,7 @@
     "Python.HW13.executor": "Run",
     "Python.HW14.executor": "Run",
     "Python.HW15.executor": "Run",
+    "Python.HW16.executor": "Run",
     "Python.HW2.executor": "Run",
     "Python.HW3.executor": "Run",
     "Python.HW4.executor": "Run",
@@ -86,14 +90,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1723830597690</updated>
-    </task>
-    <task id="LOCAL-00004" summary="added HW3">
-      <option name="closed" value="true" />
-      <created>1724867941213</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1724867941213</updated>
     </task>
     <task id="LOCAL-00005" summary="added HW3">
       <option name="closed" value="true" />
@@ -479,7 +475,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736882415446</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="added HW15.py">
+      <option name="closed" value="true" />
+      <created>1736966514826</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1736966514826</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

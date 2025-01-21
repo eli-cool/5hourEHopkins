@@ -199,7 +199,7 @@ class MovingSquareGame:
 if __name__ == '__main__':
     game = MovingSquareGame()
     game.run()"""
-while True:
+"""while True:
     ask = int(input("how many players?"))
     if ask > 0:
         break
@@ -217,4 +217,75 @@ for i in range(1,ask +1):
 
     colgate.append(rate)
 
-print("the average ratings for all models rated is ",sum(colgate) / len(colgate))
+print("the average ratings for all models rated is ",sum(colgate) / len(colgate))"""
+"""import pygame
+import sys
+
+class MovingSquareGame:
+
+    def _handle_events(self):
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                sys.exit()
+
+    def __init__(self):
+        pygame.init()
+        self.width, self.height = 500, 500
+        self.win = pygame.display.set_mode((self.width, self.height))
+        pygame.display.set_caption("Moving Square")
+        self.square_size = 50
+        self.square_x = self.width // 2 - self.square_size // 2
+        self.square_y = self.height // 2 - self.square_size // 2
+        self.speed = 5
+        self.clock = pygame.time.Clock()
+
+    def run(self):
+        while True:
+            _handle_events()
+            self._move_square()
+            self._draw_screen()
+            self.clock.tick(60)
+
+    def _move_square(self):
+        keys = pygame.key.get_pressed()
+
+        if keys[pygame.K_w] and self.square_y > 0:
+            self.square_y -= self.speed
+        if keys[pygame.K_s] and self.square_y < self.height - self.square_size:
+            self.square_y += self.speed
+        if keys[pygame.K_a] and self.square_x > 0:
+            self.square_x -= self.speed
+        if keys[pygame.K_d] and self.square_x < self.width - self.square_size:
+            self.square_x += self.speed"""
+import random
+def hello():
+    print("HELLO hi HII Hey y0 HEYY WOLRD")
+#2. Create two empty integer variables named "heads" and "tails"
+heads = int()
+tails = int()
+#3. Create a def function that flips a coin one hundred times and increments the result in the above variables.
+def flip2():
+    global heads
+    global tails
+    for i in range(0,100):
+        flip = random.randint(0,1)
+        if flip == 1:
+            heads += 1
+        else:
+            tails += 1
+#4. Call the "Hello world" and "Coin Flip" functions here
+hello();flip2()
+#5. Print the final result of heads and tails here
+print(heads); print(tails)
+ammount = 0
+def superb():
+    global ammount
+    while heads
+        flip2()
+        print(heads)
+        print(tails)
+        ammount += 1
+    print("it took ", {ammount}," of attempts")
+
+superb()

@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f63d945-dd29-44d2-b3ea-1d61039e76f2" name="Changes" comment="added HW16.py">
-      <change afterPath="$PROJECT_DIR$/HW17.py" afterDir="false" />
+    <list default="true" id="3f63d945-dd29-44d2-b3ea-1d61039e76f2" name="Changes" comment="added HW17.py">
+      <change afterPath="$PROJECT_DIR$/HW18.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/playground.py" beforeDir="false" afterPath="$PROJECT_DIR$/playground.py" afterDir="false" />
     </list>
@@ -59,6 +59,7 @@
     "Python.HW15.executor": "Run",
     "Python.HW16.executor": "Run",
     "Python.HW17.executor": "Run",
+    "Python.HW18.executor": "Run",
     "Python.HW2.executor": "Run",
     "Python.HW3.executor": "Run",
     "Python.HW4.executor": "Run",
@@ -92,14 +93,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1723830597690</updated>
-    </task>
-    <task id="LOCAL-00006" summary="added HW3">
-      <option name="closed" value="true" />
-      <created>1724954521931</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1724954521931</updated>
     </task>
     <task id="LOCAL-00007" summary="added HW3">
       <option name="closed" value="true" />
@@ -485,7 +478,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737140481310</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="added HW17.py">
+      <option name="closed" value="true" />
+      <created>1737487161497</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1737487161497</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -507,6 +508,7 @@
     <MESSAGE value="added Scenario 4.py" />
     <MESSAGE value="added HW15.py" />
     <MESSAGE value="added HW16.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="added HW16.py" />
+    <MESSAGE value="added HW17.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="added HW17.py" />
   </component>
 </project>

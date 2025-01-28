@@ -264,28 +264,30 @@ def hello():
 #2. Create two empty integer variables named "heads" and "tails"
 heads = int()
 tails = int()
+ammount = 0
 #3. Create a def function that flips a coin one hundred times and increments the result in the above variables.
 def flip2():
     global heads
     global tails
-    for i in range(0,100):
+    global ammount
+    for i in range(0,10):
         flip = random.randint(0,1)
         if flip == 1:
             heads += 1
         else:
             tails += 1
+    print("heads",heads)
+    print("tails",tails)
+    print()
+    ammount += 1
+
 #4. Call the "Hello world" and "Coin Flip" functions here
 hello();flip2()
 #5. Print the final result of heads and tails here
-print(heads); print(tails)
-ammount = 0
-def superb():
-    global ammount
-    while heads
-        flip2()
-        print(heads)
-        print(tails)
-        ammount += 1
-    print("it took ", {ammount}," of attempts")
+while heads >= 2:
+    heads = 0
+    tails = 0
+    flip2()
 
-superb()
+print("it took ", ammount, " of attempts")
+

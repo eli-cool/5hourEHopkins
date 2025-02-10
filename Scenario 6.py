@@ -1,4 +1,4 @@
-#Name:
+#Name: Eli Hopkins
 #Class: 5th Hour
 #Assigment: Scenario 6
 import random

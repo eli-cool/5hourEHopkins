@@ -75,6 +75,8 @@ while True:
         print("your score is", points)
         break
 """
+import random
+
 """
 import pygame
 import sys
@@ -258,7 +260,7 @@ class MovingSquareGame:
             self.square_x -= self.speed
         if keys[pygame.K_d] and self.square_x < self.width - self.square_size:
             self.square_x += self.speed"""
-import random
+"""import random
 def hello():
     print("HELLO hi HII Hey y0 HEYY WOLRD")
 #2. Create two empty integer variables named "heads" and "tails"
@@ -289,5 +291,17 @@ while heads >= 2:
     tails = 0
     flip2()
 
-print("it took ", ammount, " of attempts")
+print("it took ", ammount, " of attempts")"""
+
+def roll():
+    return random.randint(1,20)
+print(roll())
+def col():
+    cols=["red","blue","green","yellow","purple","orange","white","black"]
+    return random.choice(cols)
+def typ():
+    typs=["japan","cowboy","magical","kid","worker","army","feral"]
+    return random.choice(typs)
+def character():
+    print("here is your character: ")
 

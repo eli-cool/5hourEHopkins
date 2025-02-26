@@ -295,13 +295,20 @@ print("it took ", ammount, " of attempts")"""
 
 def roll():
     return random.randint(1,20)
-print(roll())
 def col():
     cols=["red","blue","green","yellow","purple","orange","white","black"]
     return random.choice(cols)
 def typ():
-    typs=["japan","cowboy","magical","kid","worker","army","feral"]
+    typs=["ninja/samurai","cowboy","magical","kid","worker","army","feral"]
     return random.choice(typs)
 def character():
-    print("here is your character: ")
-
+    name = input("what would you like to name your character? ")
+    print(f"here is {name}'s character: ")
+    print("speed: ",roll())
+    print("strength: ", roll())
+    print("tactics: ", roll())
+    print()
+    print("their main color is ",col())
+    print("their secondary color is ",col())
+    print("their type is: ",typ())
+character()

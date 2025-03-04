@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f63d945-dd29-44d2-b3ea-1d61039e76f2" name="Changes" comment="added ai playground.py">
-      <change afterPath="$PROJECT_DIR$/HW21.py" afterDir="false" />
+    <list default="true" id="3f63d945-dd29-44d2-b3ea-1d61039e76f2" name="Changes" comment="added HW21.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW21.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW21.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +62,7 @@
     &quot;Python.HW19.executor&quot;: &quot;Run&quot;,
     &quot;Python.HW2.executor&quot;: &quot;Run&quot;,
     &quot;Python.HW20.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW21.executor&quot;: &quot;Run&quot;,
     &quot;Python.HW3.executor&quot;: &quot;Run&quot;,
     &quot;Python.HW4.executor&quot;: &quot;Run&quot;,
     &quot;Python.HW5.executor&quot;: &quot;Run&quot;,
@@ -95,14 +96,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1723830597690</updated>
-    </task>
-    <task id="LOCAL-00017" summary="added Scenario 1">
-      <option name="closed" value="true" />
-      <created>1726683367335</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1726683367335</updated>
     </task>
     <task id="LOCAL-00018" summary="added Scenario 1">
       <option name="closed" value="true" />
@@ -488,11 +481,18 @@
       <option name="project" value="LOCAL" />
       <updated>1740683994483</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="added HW21.py">
+      <option name="closed" value="true" />
+      <created>1741029437597</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1741029437597</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="initial commit" />
     <MESSAGE value="added HW1" />
     <MESSAGE value="added HW2" />
     <MESSAGE value="added HW3" />
@@ -517,6 +517,7 @@
     <MESSAGE value="added scenario 7.py" />
     <MESSAGE value="added HW20.py" />
     <MESSAGE value="added playground.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="added playground.py" />
+    <MESSAGE value="added HW21.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="added HW21.py" />
   </component>
 </project>

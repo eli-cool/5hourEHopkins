@@ -25,14 +25,11 @@ dics = {
 }
 #2. Create a def function that pulls the values from the dictionary as arguments, adds together the
 #players of all three sports, and prints the sum
+#print(dics)
+print(dics.values())
 
-def add(d):
-    total=0
-    for i in d:
-        for x in i.values():
-            if isinstance(x,int):
-                total+=x
-            print(total)
+def add(a,b,c):
+    print(a+b+c)
 
 #3. Call the function with arguments here
-add(dics)
+add(dics["sport1"]["people"],dics["sport2"]["people"],dics["sport3"]["people"])

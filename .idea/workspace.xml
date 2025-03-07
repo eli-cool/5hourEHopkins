@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f63d945-dd29-44d2-b3ea-1d61039e76f2" name="Changes" comment="added HW21.py">
-      <change afterPath="$PROJECT_DIR$/HW22.py" afterDir="false" />
+    <list default="true" id="3f63d945-dd29-44d2-b3ea-1d61039e76f2" name="Changes" comment="added HW22.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW22.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW22.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,40 +47,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.HW1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW10.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW11.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW12.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW13.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW14.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW15.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW16.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW17.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW18.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW19.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW20.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW21.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW4.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW5.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW6.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW7.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW8.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW9.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Scenario 1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Scenario 3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Scenario 4.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ai playground.executor&quot;: &quot;Run&quot;,
-    &quot;Python.hello world.executor&quot;: &quot;Run&quot;,
-    &quot;Python.playground.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.HW1.executor": "Run",
+    "Python.HW10.executor": "Run",
+    "Python.HW11.executor": "Run",
+    "Python.HW12.executor": "Run",
+    "Python.HW13.executor": "Run",
+    "Python.HW14.executor": "Run",
+    "Python.HW15.executor": "Run",
+    "Python.HW16.executor": "Run",
+    "Python.HW17.executor": "Run",
+    "Python.HW18.executor": "Run",
+    "Python.HW19.executor": "Run",
+    "Python.HW2.executor": "Run",
+    "Python.HW20.executor": "Run",
+    "Python.HW21.executor": "Run",
+    "Python.HW22.executor": "Run",
+    "Python.HW3.executor": "Run",
+    "Python.HW4.executor": "Run",
+    "Python.HW5.executor": "Run",
+    "Python.HW6.executor": "Run",
+    "Python.HW7.executor": "Run",
+    "Python.HW8.executor": "Run",
+    "Python.HW9.executor": "Run",
+    "Python.Scenario 1.executor": "Run",
+    "Python.Scenario 3.executor": "Run",
+    "Python.Scenario 4.executor": "Run",
+    "Python.ai playground.executor": "Run",
+    "Python.hello world.executor": "Run",
+    "Python.playground.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "full.screen.before.presentation.mode": "false",
+    "git-widget-placeholder": "master",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -96,14 +98,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1723830597690</updated>
-    </task>
-    <task id="LOCAL-00019" summary="added HW5">
-      <option name="closed" value="true" />
-      <created>1727804318273</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1727804318273</updated>
     </task>
     <task id="LOCAL-00020" summary="added HW5">
       <option name="closed" value="true" />
@@ -489,11 +483,18 @@
       <option name="project" value="LOCAL" />
       <updated>1741115331095</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="added HW22.py">
+      <option name="closed" value="true" />
+      <created>1741288687746</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1741288687746</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added HW1" />
     <MESSAGE value="added HW2" />
     <MESSAGE value="added HW3" />
     <MESSAGE value="added playground" />
@@ -518,6 +519,7 @@
     <MESSAGE value="added HW20.py" />
     <MESSAGE value="added playground.py" />
     <MESSAGE value="added HW21.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="added HW21.py" />
+    <MESSAGE value="added HW22.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="added HW22.py" />
   </component>
 </project>

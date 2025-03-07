@@ -1,6 +1,9 @@
 #Name:Eli Hopkins
 #Class: 5th Hour
 #Assignment: HW22
+from contextlib import nullcontext
+from logging import exception, error
+
 
 #1. Create a class containing a def function that inits self and 3 other attributes for store items (stock, cost, and weight).
 class Store():
@@ -22,5 +25,11 @@ print(apple.stock,clothes.stock,tv.stock)
 print(clothes.cost)
 print(Store.inflation(clothes))
 #5. Directly change the stock of the third store item to approx. 1/4th the original stock and then print the new stock amount.
-
+tv.stock /= 4
+print(tv.stock)
 #6. Delete the first store item and then attempt to print the weight of the first store item. Create a try/except catch to fix the error.
+del apple
+try:
+    print(apple)
+except:
+    print("no apple")

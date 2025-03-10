@@ -30,6 +30,6 @@ print(tv.stock)
 #6. Delete the first store item and then attempt to print the weight of the first store item. Create a try/except catch to fix the error.
 del apple
 try:
-    print(apple)
+    print(apple.weight)
 except:
     print("no apple")

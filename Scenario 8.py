@@ -30,7 +30,7 @@ class chara:
         self.classs = classs
         if not backround:
             self.frin = False
-        if frin==True:
+        if frin:
             partyDictionary.append(self)
         else:
             enmy.append(self)

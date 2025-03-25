@@ -127,14 +127,6 @@
       <option name="presentableId" value="Default" />
       <updated>1723830597690</updated>
     </task>
-    <task id="LOCAL-00024" summary="added HW7">
-      <option name="closed" value="true" />
-      <created>1728495620817</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1728495620818</updated>
-    </task>
     <task id="LOCAL-00025" summary="added HW7">
       <option name="closed" value="true" />
       <created>1728497930834</created>
@@ -519,7 +511,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741889969974</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="added Scenario 8.py">
+      <option name="closed" value="true" />
+      <created>1742840357538</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1742840357538</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

@@ -1,7 +1,7 @@
 #Name: Eli Hopkins
 #Class: 5th Hour
 #Assignment: Scenario8
-import random
+from random import randint
 
 #Scenario 8:
 #With a fresh perspective, the team lead wants you to look back and refactor the old combat code to
@@ -20,8 +20,9 @@ import random
 
 partyDictionary=[]
 enmy=[]
-class chara:
-    def __init__(self,mod,hp,ac,classs,backround,frin=bool):
+class Chara:
+    def __init__(self,name,mod,hp,ac,classs,backround,frin=bool):
+        self.name=name
         self.mod = mod
         self.hp = hp
         self.ac = ac
@@ -35,13 +36,45 @@ class chara:
         else:
             enmy.append(self)
 #attack functions
-    def attk(self, silly):
-        evil = f"e{silly}"
+    def attk(self,silly):
+        print(self.name,"is now attacking",silly.name)
+        #hit or miss roll
+        roll = randint(1,20) + self.mod
+        #check for hit
+        if roll >= silly.ac:
+            print("HIT!")
+            #damage roll
+            damage= randint(1,6)+randint(1,6)+self.mod
+            silly.hp-=damage
+            print(self.name,"did",damage,"DAMAGE!")
+        else:
+            print("MIIISSSSS")
+        #death check
+            if not silly.hp > 0:
+                print("silly died")
+            else:
+                print("they LIIVE!")
+            #enemy attack back
+                enroll = randint(1,20)+silly.mod
+                if enroll>=self.ac:
+                    print(silly.name,"is attacking",self.name)
+                    endamage=randint(1,6)+silly.mod
+                    self.hp-=endamage
+                    print(silly.name, "did", endamage, "DAMAGE!")
+                    #kill check
+                    if not self.hp>0:
+                        print(silly.name,"died")
+                    else:
+                        print("ALIVE")
+                else:
+                    print("MISS!")
+        """evil = f"e{silly}"
 
         print(partyDictionary[str(self)]["Name"], "is attacking a", enmy[evil]["Name"])
-        # Hit Roll
 
+        # Hit Roll
         roll = random.randint(1, 20) + partyDictionary[str(self)]["mod"]
+
         # Check for a Hit
 
         if roll >= enmy[evil]["AC"]:
@@ -73,11 +106,11 @@ class chara:
         # hero dies check
         if partyDictionary[str(self)]["Health"] < 0:
             print(partyDictionary[str(self)]["Name"], "has died!!")
-
+"""
 
 #(self,mod,hp,ac,classs,backround,frin=bool)
-skeleton=chara(7,10,5,(),())
-larry=chara(5,17,10,"feral","unknown",True)
-larry.attk(skeleton)
+skeleton=Chara("skeleton",7,10,5,(),())
+larry=Chara("skeleton",5,17,10,"feral","unknown",True)
+skeleton.attk(larry)
 
 

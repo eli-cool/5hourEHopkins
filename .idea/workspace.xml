@@ -44,45 +44,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.HW1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW10.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW11.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW12.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW13.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW14.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW15.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW16.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW17.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW18.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW19.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW20.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW21.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW22.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW23.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW4.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW5.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW6.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW7.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW8.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW9.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Scenario 1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Scenario 3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Scenario 4.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Scenario 8.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ai playground.executor&quot;: &quot;Run&quot;,
-    &quot;Python.hello world.executor&quot;: &quot;Run&quot;,
-    &quot;Python.playground.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Language Defaults&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.HW1.executor": "Run",
+    "Python.HW10.executor": "Run",
+    "Python.HW11.executor": "Run",
+    "Python.HW12.executor": "Run",
+    "Python.HW13.executor": "Run",
+    "Python.HW14.executor": "Run",
+    "Python.HW15.executor": "Run",
+    "Python.HW16.executor": "Run",
+    "Python.HW17.executor": "Run",
+    "Python.HW18.executor": "Run",
+    "Python.HW19.executor": "Run",
+    "Python.HW2.executor": "Run",
+    "Python.HW20.executor": "Run",
+    "Python.HW21.executor": "Run",
+    "Python.HW22.executor": "Run",
+    "Python.HW23.executor": "Run",
+    "Python.HW24.executor": "Run",
+    "Python.HW3.executor": "Run",
+    "Python.HW4.executor": "Run",
+    "Python.HW5.executor": "Run",
+    "Python.HW6.executor": "Run",
+    "Python.HW7.executor": "Run",
+    "Python.HW8.executor": "Run",
+    "Python.HW9.executor": "Run",
+    "Python.Scenario 1.executor": "Run",
+    "Python.Scenario 3.executor": "Run",
+    "Python.Scenario 4.executor": "Run",
+    "Python.Scenario 8.executor": "Run",
+    "Python.ai playground.executor": "Run",
+    "Python.hello world.executor": "Run",
+    "Python.playground.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "full.screen.before.presentation.mode": "false",
+    "git-widget-placeholder": "master",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Language Defaults"
   }
-}</component>
-  <component name="RunManager" selected="Python.Scenario 8">
+}]]></component>
+  <component name="RunManager" selected="Python.HW24">
     <configuration name="HW23" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="5hourEHopkins" />
       <option name="ENV_FILES" value="" />
@@ -97,6 +98,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HW23.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="HW24" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="5hourEHopkins" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HW24.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -129,6 +152,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.HW24" />
         <item itemvalue="Python.Scenario 8" />
         <item itemvalue="Python.HW23" />
       </list>
@@ -149,14 +173,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1723830597690</updated>
-    </task>
-    <task id="LOCAL-00026" summary="added HW7">
-      <option name="closed" value="true" />
-      <created>1728584317729</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1728584317729</updated>
     </task>
     <task id="LOCAL-00027" summary="added HW7">
       <option name="closed" value="true" />
@@ -542,7 +558,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742926730039</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="added Scenario 8.py">
+      <option name="closed" value="true" />
+      <created>1743013046180</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1743013046180</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
